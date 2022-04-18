@@ -1,0 +1,20 @@
+{
+    "default": {
+        "power-price": {
+            "peak": 1.1401,
+            "usual": 0.6630,
+            "vally": 0.2775
+        },
+        "subsidy-price": 0.0,
+        "subsidy-year": 0
+    },
+    "jiangsu": {
+        "power-price": {
+            "peak": 1.1401,
+            "usual": 0.6630,
+            "vally": 0.2775
+        },
+        "subsidy-price": 0.0,
+        "subsidy-year": 0
+    }
+}

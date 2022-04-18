@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <title>Calculator</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="libs/bootstrap.min.css" />
+    <script src="libs/zepto.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+
+    <script src="app.min.js"></script>
 </head>
 <body>
-    页面接口
-    <form name="formular" action="" >
-        汇率 <input type="text" placeholder="0.1" /> <br />
+    <div id="layer-input">
+        <table id="table-input" class="gridtable">
+            <thead>
+            <tr>
+                <th width="48">序号</th>
+                <th width="108">参数名称</th>
+                <th width="50">数值</th>
+                <th width="50">单位</th>
+                <th width="68">范围</th>
+                <th width="68">备注</th>
+            </tr>
+            </thead>
+            <tbody id="tb_body_input" >            
+            </tbody>
+        </table>
+        <br />
+        <button id="btn-calc">计算</button>
+    </div>
 
-        结果 <label id="result" name="result" > 1.0 </label> <br />
-
-        <input type="button" value="计算" />
-    </form>
+    <div id="layer-output" style="display:none;">
+        <table id="table-output" class="gridtable">
+            <thead>
+            <tr>
+                <th width="48">序号</th>
+                <th width="168">参数名称</th>
+                <th width="50">数值</th>
+                <th width="50">单位</th>
+                <th width="68">备注</th>
+            </tr>
+            </thead>
+            <tbody id="tb_body_result" >            
+            </tbody>
+        </table>
+        <br />
+        <button id="btn-rtn">返回</button>
+    </div>
 </body>
 </html>
