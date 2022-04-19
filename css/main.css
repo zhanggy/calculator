@@ -1,6 +1,6 @@
 table.gridtable {
 	font-family: verdana,arial,sans-serif;
-	font-size:11px;
+	font-size:10px;
 	color:#333333;
 	border-width: 1px;
 	border-color: #666666;
@@ -36,4 +36,8 @@ div.float_right {
 	margin-top: 8px;
 	float: right;
 	font-size: 14px;
+}
+
+input.numb_input {
+	width: 78px;
 }
