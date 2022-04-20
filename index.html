@@ -18,20 +18,95 @@
         <table id="table-input" class="gridtable">
             <thead>
             <tr>
-                <th width="48">序号</th>
-                <th width="148">参数名称</th>
-                <th width="78">数值</th>
-                <th width="30">单位</th>
-                <th width="68">范围</th>
-                <th width="108">备注</th>
+                <td class="tb_title" colspan="4" width="188">
+                    储能收益测算器
+                </td>
             </tr>
             </thead>
-            <tbody id="tb_body_input" >            
-            </tbody>
+            <tbody id="tb_body_input">
+            <tr>
+                <th rowspan="2">电站概况</th>
+                <th>装机功率</th>
+                <th>装机容量</th>
+                <th>单位装机成本</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="numb_input" id="input_A" value="500" />kW</td>
+                <td><input type="number" class="numb_input" id="input_B" value="1000" />kWh</td>
+                <td><input type="number" class="numb_input" id="input_C" value="1.8" />元/Wh</td>
+            </tr>
+            <tr>
+                <th rowspan="2">电价</th>
+                <th>峰时</th>
+                <th>平时</th>
+                <th>谷时</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="numb_input" id="input_D" value="0" />元/kWh</td>
+                <td><input type="number" class="numb_input" id="input_E" value="0" />元/kWh</td>
+                <td><input type="number" class="numb_input" id="input_F" value="0" />元/kWh</td>
+            </tr>
+            <tr>
+                <th rowspan="2">电池特性</th>
+                <th>电池循环寿命</th>
+                <th>放电深度</th>
+                <th>系统效率</th>
+            </tr>
+            <tr>
+                <td title="到额定容量80%"><input type="number" class="numb_input" id="input_G" value="5000" />次</td>
+                <td><input type="number" class="numb_input" id="input_H" value="95" min="0" max="100" />%</td>
+                <td><input type="number" class="numb_input" id="input_I" value="90" min="1" max="100" />%</td>
+            </tr>
 
+            <tr>
+                <th rowspan="2">使用情况</th>
+                <th>每天充放电循环次数</th>
+                <th>每年运行天数</th>
+                <th>系统寿命</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="numb_input" id="input_J" value="2" min="1" max="2" />次</td>
+                <td><input type="number" class="numb_input" id="input_K" value="350" min="1" max="366" />天</td>
+                <td><input type="number" class="numb_input" id="input_L" value="15" min="5" max="25" />年</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">贷款</th>
+                <th>贷款比例</th>
+                <th>贷款利率</th>
+                <th>贷款年限</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="numb_input" id="input_N" value="0" min="0" max="100" />%</td>
+                <td><input type="number" class="numb_input" id="input_O" value="5.4" min="0" max="25" />%</td>
+                <td><input type="number" class="numb_input" id="input_P" value="5" min="0" max="25" />年</td>
+            </tr>
+            <tr>
+                <th rowspan="2">补贴</th>
+                <th>度电补贴</th>
+                <th colspan="2">补贴年限</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="numb_input" id="input_Q" value="0" step="0.1" />元/kWh</td>
+                <td colspan="2"><input type="number" class="numb_input" id="input_R" value="5.4" min="0" max="25" />年</td>                
+            </tr>
+            
+            <tr>
+                <th rowspan="2">其它</th>
+                <th>年运维成本</th>
+                <th>保险费用</th>
+                <th>残值</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="numb_input" id="input_M" value="0.005" min="0" step="0.001" />元/Wh</td>
+                <td><input type="number" class="numb_input" id="input_S" value="0" min="0" />万元</td>
+                <td><input type="number" class="numb_input" id="input_T" value="5" min="0" max="100" />%</td>
+            </tr>
+
+            </tbody>
             <tfoot>
             <tr>
-                <td colspan="6" align="center">
+                <td colspan="4" align="center">
                     <button id="btn-calc" > 计 算 </button>
                 </td>
             </tr>

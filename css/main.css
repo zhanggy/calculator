@@ -11,6 +11,7 @@ table.gridtable {
 table.gridtable th {
 	border-width: 1px;
 	padding: 8px;
+	text-align: center;
 	border-style: solid;
 	border-color: #666666;
 	background-color: #dedede;
@@ -32,6 +33,16 @@ table.gridtable caption {
 	background-color: #dedede;
 }
 
+td.tb_title {
+	border-width: 1px;
+	padding: 8px;
+	font-size:16px;
+	text-align: center;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
 div.float_right {
 	margin-top: 8px;
 	float: right;
@@ -40,4 +51,8 @@ div.float_right {
 
 input.numb_input {
 	width: 78px;
+}
+
+button {
+	font-size: 16;
 }
