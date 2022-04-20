@@ -53,6 +53,8 @@ input.numb_input {
 	width: 78px;
 }
 
-button {
+.calc_bt {
+	width: 128px;
+	height: 40px;
 	font-size: 16;
 }

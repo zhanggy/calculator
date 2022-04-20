@@ -26,88 +26,85 @@
             <tbody id="tb_body_input">
             <tr>
                 <th rowspan="2">电站概况</th>
-                <th>装机功率</th>
-                <th>装机容量</th>
-                <th>单位装机成本</th>
+                <th>装机功率(kW)</th>
+                <th>装机容量(kWh)</th>
+                <th>单位装机成本(元/Wh)</th>
             </tr>
             <tr>
-                <td><input type="number" class="numb_input" id="input_A" value="500" />kW</td>
-                <td><input type="number" class="numb_input" id="input_B" value="1000" />kWh</td>
-                <td><input type="number" class="numb_input" id="input_C" value="1.8" />元/Wh</td>
+                <td><input type="number" class="numb_input" id="input_A" value="500" /></td>
+                <td><input type="number" class="numb_input" id="input_B" value="1000" /></td>
+                <td><input type="number" class="numb_input" id="input_C" value="1.8" /></td>
             </tr>
             <tr>
                 <th rowspan="2">电价</th>
-                <th>峰时</th>
-                <th>平时</th>
-                <th>谷时</th>
+                <th>峰时(元/kWh)</th>
+                <th>平时(元/kWh)</th>
+                <th>谷时(元/kWh)</th>
             </tr>
             <tr>
-                <td><input type="number" class="numb_input" id="input_D" value="0" />元/kWh</td>
-                <td><input type="number" class="numb_input" id="input_E" value="0" />元/kWh</td>
-                <td><input type="number" class="numb_input" id="input_F" value="0" />元/kWh</td>
+                <td><input type="number" class="numb_input" id="input_D" value="0" /></td>
+                <td><input type="number" class="numb_input" id="input_E" value="0" /></td>
+                <td><input type="number" class="numb_input" id="input_F" value="0" /></td>
             </tr>
             <tr>
                 <th rowspan="2">电池特性</th>
-                <th>电池循环寿命</th>
-                <th>放电深度</th>
-                <th>系统效率</th>
+                <th>循环寿命(次)</th>
+                <th>放电深度(%)</th>
+                <th>系统效率(%)</th>
             </tr>
             <tr>
-                <td title="到额定容量80%"><input type="number" class="numb_input" id="input_G" value="5000" />次</td>
-                <td><input type="number" class="numb_input" id="input_H" value="95" min="0" max="100" />%</td>
-                <td><input type="number" class="numb_input" id="input_I" value="90" min="1" max="100" />%</td>
+                <td title="到额定容量80%"><input type="number" class="numb_input" id="input_G" value="5000" /></td>
+                <td><input type="number" class="numb_input" id="input_H" value="95" min="0" max="100" /></td>
+                <td><input type="number" class="numb_input" id="input_I" value="90" min="1" max="100" /></td>
             </tr>
-
             <tr>
                 <th rowspan="2">使用情况</th>
-                <th>每天充放电循环次数</th>
-                <th>每年运行天数</th>
-                <th>系统寿命</th>
+                <th>充放电循环次数(次/天)</th>
+                <th>每年运行天数(天)</th>
+                <th>系统寿命(年)</th>
             </tr>
             <tr>
-                <td><input type="number" class="numb_input" id="input_J" value="2" min="1" max="2" />次</td>
-                <td><input type="number" class="numb_input" id="input_K" value="350" min="1" max="366" />天</td>
-                <td><input type="number" class="numb_input" id="input_L" value="15" min="5" max="25" />年</td>
+                <td><input type="number" class="numb_input" id="input_J" value="2" min="1" max="2" /></td>
+                <td><input type="number" class="numb_input" id="input_K" value="350" min="1" max="366" /></td>
+                <td><input type="number" class="numb_input" id="input_L" value="15" min="5" max="25" /></td>
             </tr>
-
             <tr>
                 <th rowspan="2">贷款</th>
-                <th>贷款比例</th>
-                <th>贷款利率</th>
-                <th>贷款年限</th>
+                <th>贷款比例(%)</th>
+                <th>贷款利率(%)</th>
+                <th>贷款年限(年)</th>
             </tr>
             <tr>
-                <td><input type="number" class="numb_input" id="input_N" value="0" min="0" max="100" />%</td>
-                <td><input type="number" class="numb_input" id="input_O" value="5.4" min="0" max="25" />%</td>
-                <td><input type="number" class="numb_input" id="input_P" value="5" min="0" max="25" />年</td>
+                <td><input type="number" class="numb_input" id="input_N" value="0" min="0" max="100" /></td>
+                <td><input type="number" class="numb_input" id="input_O" value="5.4" min="0" max="25" /></td>
+                <td><input type="number" class="numb_input" id="input_P" value="5" min="0" max="25" /></td>
             </tr>
             <tr>
                 <th rowspan="2">补贴</th>
-                <th>度电补贴</th>
-                <th colspan="2">补贴年限</th>
+                <th>度电补贴(元/kWh)</th>
+                <th colspan="2">补贴年限(年)</th>
             </tr>
             <tr>
-                <td><input type="number" class="numb_input" id="input_Q" value="0" step="0.1" />元/kWh</td>
-                <td colspan="2"><input type="number" class="numb_input" id="input_R" value="5.4" min="0" max="25" />年</td>                
-            </tr>
-            
+                <td><input type="number" class="numb_input" id="input_Q" value="0" step="0.1" /></td>
+                <td colspan="2"><input type="number" class="numb_input" id="input_R" value="5.4" min="0" max="25" /></td>                
+            </tr>            
             <tr>
                 <th rowspan="2">其它</th>
-                <th>年运维成本</th>
-                <th>保险费用</th>
-                <th>残值</th>
+                <th>年运维成本(元/Wh)</th>
+                <th>保险费用(万元)</th>
+                <th>残值(%)</th>
             </tr>
             <tr>
-                <td><input type="number" class="numb_input" id="input_M" value="0.005" min="0" step="0.001" />元/Wh</td>
-                <td><input type="number" class="numb_input" id="input_S" value="0" min="0" />万元</td>
-                <td><input type="number" class="numb_input" id="input_T" value="5" min="0" max="100" />%</td>
+                <td><input type="number" class="numb_input" id="input_M" value="0.005" min="0" step="0.001" /></td>
+                <td><input type="number" class="numb_input" id="input_S" value="0" min="0" /></td>
+                <td><input type="number" class="numb_input" id="input_T" value="5" min="0" max="100" /></td>
             </tr>
 
             </tbody>
             <tfoot>
             <tr>
                 <td colspan="4" align="center">
-                    <button id="btn-calc" > 计 算 </button>
+                    <button id="btn-calc" class="calc_bt" > 计 算 </button>
                 </td>
             </tr>
             </tfoot>
@@ -131,7 +128,7 @@
             <tfoot>
                 <tr>
                     <td colspan="6" align="center">
-                        <button id="btn-rtn"> 返 回 </button>
+                        <button id="btn-rtn" class="calc_bt"> 返 回 </button>
                     </td>
                 </tr>
             </tfoot>
