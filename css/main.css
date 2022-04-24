@@ -35,8 +35,8 @@ table.gridtable caption {
 
 td.tb_title {
 	border-width: 1px;
-	padding: 2px;
-	font-size:16px;
+	padding: 0px;
+	font-size:20px;
 	font-weight: bolder;
 	text-align: center;
 	border-style: solid;
